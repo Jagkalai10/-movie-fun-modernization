@@ -2,8 +2,8 @@ package org.superbiz.moviefun;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.superbiz.moviefun.albums.Album;
 import org.superbiz.moviefun.albumsapi.AlbumFixtures;
+import org.superbiz.moviefun.albumsapi.AlbumInfo;
 import org.superbiz.moviefun.albumsapi.AlbumsClient;
 import org.superbiz.moviefun.moviesapi.MovieFixtures;
 import org.superbiz.moviefun.moviesapi.MovieInfo;
@@ -38,7 +38,7 @@ public class HomeController {
             moviesClient.addMovie(movieInfo);
         }
 
-        for (Album album : albumFixtures.load()) {
+        for (AlbumInfo album : albumFixtures.load()) {
             albumsClient.addAlbum(album);
         }
 
