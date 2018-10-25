@@ -1,4 +1,4 @@
-package org.superbiz.moviefun.blobstore;
+package org.superbiz.moviefun.bloblstore;
 
 import org.apache.tika.Tika;
 import org.apache.tika.io.IOUtils;
